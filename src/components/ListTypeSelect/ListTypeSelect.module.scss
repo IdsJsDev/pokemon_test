@@ -1,0 +1,23 @@
+.container{
+display: flex;
+  gap: 5px;
+  & .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    background: #1976d2;
+    color: white;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    &:hover{
+      background-color: var(--blue-2);
+    }
+    &.active{
+      background: #4c9cf1;
+      cursor: default;
+    }
+  }
+}
